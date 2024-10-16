@@ -4,7 +4,7 @@ let data = boston.data;
 let top = [];
 
 for (let i = 0; i < data.length; i++) {
-  if (data[i][11] >  200000) {
+  if (data[i][11] < 200000) {
     top.push({ name: data[i][8], salary: data[i][11] });
   }
 }
